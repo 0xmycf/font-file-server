@@ -10,7 +10,7 @@ let
     else pkgs.buildGoModule.override {stdenv = pkgs.pkgsStatic.stdenv;};
 in
   buildModule rec {
-    pname = "go-app";
+    pname = "font-file-server";
     version = import ./version.nix;
     src = ./.;
     ldflags = [
